@@ -2,36 +2,32 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login — God of War Style</title>
+  <title>Tela de Login</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <div class="fog"></div>
+<div class="container">
+  <h2>Login</h2>
 
-  <div class="container">
-
-    <div class="login-box">
-      <h1 class="title">Login</h1>
-
-      <form>
-        <label for="user">Usuário</label>
-        <input type="text" id="user" placeholder="Digite seu usuário">
-
-        <label for="password">Senha</label>
-        <input type="password" id="password" placeholder="Digite sua senha">
-
-        <button id="btn" type="submit">ENTRAR</button>
-      </form>
-    </div>
+  <div class="input-group">
+    <label>Usuário</label>
+    <input type="text" id="loginUser">
   </div>
 
-  <canvas id="particles"></canvas>
+  <div class="input-group">
+    <label>Senha</label>
+    <input type="password" id="loginPass">
+  </div>
 
-  <audio id="hover-sound" src="assets/sounds/hover.mp3"></audio>
-  <audio id="click-sound" src="assets/sounds/click.mp3"></audio>
+  <button onclick="login()">Entrar</button>
 
-  <script src="index.js"></script>
+  <p class="link">
+    Não tem conta? 
+    <a href="cadastro.html">Cadastrar-se</a>
+  </p>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
