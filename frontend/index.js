@@ -32,5 +32,5 @@ function cadastrar() {
   );
 
   // Volta para login
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 }

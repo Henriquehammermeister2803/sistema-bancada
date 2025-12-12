@@ -1,0 +1,138 @@
+/* ----- FUNDO DARK ----- */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #05070c;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    color: #e6e6e6;
+    overflow-x: hidden;
+}
+
+/* ----- TÍTULO NEON ----- */
+h1 {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #7db8ff;
+    text-shadow: 0 0 15px rgba(0,120,255,0.8);
+    animation: neonPulse 2s infinite alternate ease-in-out;
+}
+
+@keyframes neonPulse {
+    from { text-shadow: 0 0 8px rgba(0,120,255,0.4); }
+    to   { text-shadow: 0 0 22px rgba(0,120,255,1); }
+}
+
+/* ----- BANCADAS LADO A LADO ----- */
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 35px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    background: #0a0f18;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: #134c9e;
+    border-radius: 10px;
+}
+
+/* ----- CARDS SEM 3D ----- */
+.bancada {
+    width: 260px;
+    height:100%;
+    background: #0d111a;
+    border: 2px solid #0a1a33;
+    border-radius: 18px;
+    padding: 20px;
+
+    opacity: 0;
+    transform: translateY(40px);
+    transition: .8s ease;
+}
+
+/* Fade-in ativado pelo JS */
+.bancada.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ----- IMAGEM SEM PARALLAX 3D ----- */
+.bancada img {
+    height: 80%;
+    border-radius: 12px;
+    transition: .4s ease;
+    align-items: center;
+}
+
+/* Parallax vertical suave no scroll */
+.parallax-img {
+    transform: translateY(var(--parallax-offset, 0px));
+}
+
+/* ----- TÍTULO DO CARD ----- */
+.bancada h2 {
+    color: #77b0ff;
+    margin-top: 12px;
+    text-shadow: 0 0 12px rgba(0,120,255,0.7);
+}
+
+/* ----- TEXTO ----- */
+.bancada p {
+    color: #cfd6e0;
+    line-height: 1.4;
+}
+
+/* ----- BOTÃO NEON ----- */
+.neon-btn {
+    padding: 12px 30px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 8px;
+    background: #001f4d;
+    color: #7db8ff;
+    font-size: 1.05rem;
+    cursor: pointer;
+
+    box-shadow: 0 0 12px rgba(0,120,255,0.6),
+                0 0 20px rgba(0,120,255,0.3) inset;
+
+    transition: .25s ease;
+}
+
+.neon-btn:hover {
+    transform: scale(1.06);
+    color: white;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,140,255,0.8),
+                0 0 45px rgba(0,140,255,0.6) inset;
+    
+}
+
+.neon-btn:active {
+    transform: scale(0.93);
+}
+
+/* ----- PARTÍCULAS ----- */
+#particles {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* ----- RESPONSIVIDADE ----- */
+@media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+}
