@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+
+.titulo {
+    text-align: center;
+    color: #2196f3;
+}
+
+.bancadas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px;
+    
+}
+
+.bancada {
+    background: #111;
+    border: 2px solid #2196f3;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+
+.bancada {
+    position: relative;
+    height:320px;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.bancada img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;     
+    background-color: #000;  
+}
+
+
+/* Layout bancada */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.menu {
+    width: 250px;
+    background: #000;
+    padding: 20px;
+    border-right: 2px solid #2196f3;
+}
+
+.menu button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background: #2196f3;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 20px;
+}
+
+.foto-bancada {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.secao {
+    display: none;
+}
+
+input {
+    padding: 8px;
+    margin: 5px 0;
+    width: 250px;
+}
+
+.acoes button {
+    margin-right: 10px;
+}
+
+.add {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 8px;
+}
+
+.remove {
+    background: #000;
+    color: #2196f3;
+    border: 1px solid #2196f3;
+    padding: 8px;
+}

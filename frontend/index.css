@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #1e3c72, #2a5298);
+  background: linear-gradient(to right, #000000, #202020);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: rgb(105, 99, 99);
   padding: 25px 35px;
   border-radius: 10px;
   width: 320px;
@@ -46,7 +46,7 @@ h2 {
 button {
   width: 100%;
   padding: 10px;
-  background: #1e3c72;
+  background: #2196f3;
   color: white;
   border: none;
   border-radius: 6px;
@@ -64,7 +64,7 @@ button:hover {
 }
 
 .link a {
-  color: #1e3c72;
+  color: #2196f3;
   font-weight: bold;
   text-decoration: none;
 }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bancadas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="titulo">Painel de Bancadas</h1>
+
+<div class="dashboard">
+
+  <!-- COLUNA ESQUERDA -->
+  <section class="painel-bancadas">
+    <h2>Bancadas</h2>
+
+    <div class="bancadas">
+
+      <a href="bancada1.html" class="bancada-card">
+        <img src="bancada_estoque.png">
+        <span>Estoque</span>
+      </a>
+
+      <a href="bancada2.html" class="bancada-card">
+        <img src="bancada_expedicao.png">
+        <span>Expedição</span>
+      </a>
+
+      <a href="bancada3.html" class="bancada-card">
+        <img src="bancada_montagem.png">
+        <span>Montagem</span>
+      </a>
+
+      <a href="bancada4.html" class="bancada-card">
+        <img src="bancada_processo.png">
+        <span>Processo</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- COLUNA DIREITA -->
+  <section class="painel-usuarios">
+    <h2>Gestão de Usuários</h2>
+
+    <div class="card">
+      <h3>Cadastrar Usuário</h3>
+      <input type="text" id="novoUsuario" placeholder="Nome do usuário">
+      <button onclick="cadastrar()">Cadastrar</button>
+    </div>
+
+    <div class="card">
+      <h3>Buscar / Remover Usuário</h3>
+      <input type="text" id="buscarUsuario" placeholder="Nome do usuário">
+      <button onclick="buscar()">Buscar</button>
+      <p id="resultado"></p>
+      <button class="remove" onclick="remover()">Remover</button>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

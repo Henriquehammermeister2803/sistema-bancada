@@ -8,7 +8,7 @@ function login() {
   }
 
   alert("Login feito com sucesso!\nUsuário: " + user);
-  window.location.href = 'bancada/bancada.html';
+  window.location.href = 'bancada.html';
 }
 
 function cadastrar() {

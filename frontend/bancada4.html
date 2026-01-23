@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bancada Estoque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout-bancada">
+
+  <!-- MENU LATERAL -->
+  <aside class="menu-lateral">
+    <h2>Bancada</h2>
+
+    <button onclick="mostrar('dados')">Dados da Bancada</button>
+    <button onclick="mostrar('buscar')">Buscar Usuários</button>
+
+    <a href="index.html" class="voltar">← Voltar</a>
+  </aside>
+
+  <!-- CONTEÚDO -->
+  <main class="conteudo-bancada">
+
+    <!-- DADOS -->
+    <section id="dados" class="secao ativa">
+      <h2>Dados da Bancada</h2>
+      <p><strong>Nome:</strong> Bancada Estoque</p>
+      <p><strong>Status:</strong> Ativa</p>
+      <p><strong>Responsável:</strong> Supervisor</p>
+    </section>
+
+    <!-- BUSCAR -->
+    <section id="buscar" class="secao">
+      <h2>Buscar Usuário</h2>
+      <input type="text" id="buscarUsuario" placeholder="Nome do usuário">
+      <button onclick="buscar()">Buscar</button>
+      <p id="resultado"></p>
+    </section>
+
+    <!-- IMAGEM -->
+    <section class="imagem-bancada">
+      <img src="bancada_processo.png">
+    </section>
+
+  </main>
+</div>
+
+<script src="bancada.js"></script>
+<script>
+function mostrar(id) {
+  document.querySelectorAll('.secao').forEach(s => s.classList.remove('ativa'));
+  document.getElementById(id).classList.add('ativa');
+}
+</script>
+
+</body>
+</html>
