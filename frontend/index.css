@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(to right, #000000, #202020);
+  background: linear-gradient(to right, #000000, #0351e4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background: rgb(105, 99, 99);
+  background: rgb(190, 179, 179);
   padding: 25px 35px;
   border-radius: 10px;
   width: 320px;

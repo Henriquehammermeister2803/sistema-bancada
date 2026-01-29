@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestão de Usuários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="titulo">Gestão de Usuários</h1>
+
+<div class="abas">
+  <a href="bancada.html" class="aba link-aba">Bancadas</a>
+  <button class="aba ativa">Usuários</button>
+</div>
+
+<div class="usuarios-layout">
+
+  <!-- FORMULÁRIO -->
+  <div class="card">
+    <h2>Cadastrar / Editar Usuário</h2>
+
+    <input type="hidden" id="editIndex">
+
+    <input type="text" id="nome" placeholder="Nome">
+    <input type="text" id="sobrenome" placeholder="Sobrenome">
+    <input type="date" id="nascimento">
+
+    <select id="tipo">
+      <option value="">Tipo de usuário</option>
+      <option>Administrador</option>
+      <option>Operador</option>
+      <option>Visitante</option>
+    </select>
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="senha" placeholder="Senha">
+
+    <button onclick="salvarUsuario()">Salvar Usuário</button>
+  </div>
+
+  <!-- LISTA -->
+  <div class="card">
+    <h2>Usuários Cadastrados</h2>
+    <ul id="listaUsuarios"></ul>
+  </div>
+
+</div>
+
+<script src="usuarios-crud.js" defer></script>
+
+</body>
+</html>
