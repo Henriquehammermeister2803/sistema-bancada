@@ -71,3 +71,5 @@ function remover() {
   salvar();
   alert("Usuário removido da bancada");
 }
+
+
