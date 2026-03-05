@@ -142,3 +142,104 @@ button.remove {
   background: transparent;
    border: 1px solid #1e90ff;
 }
+/* Reset básico */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Layout principal */
+.layout-bancada{
+  display:flex;
+  height:100vh;
+}
+
+.menu-lateral{
+  width:230px;
+  background:#24304a;
+  color:white;
+  padding:25px 20px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+
+  position:fixed;
+  left:0;
+  top:0;
+  height:100vh;
+}
+
+.menu-lateral button,
+.menu-lateral .voltar{
+  width:100%;
+}
+
+.menu-lateral h2{
+  margin-bottom:10px;
+}
+
+.menu-lateral button{
+  padding:10px;
+  border:none;
+  background:#3b82f6;
+  color:white;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+.menu-lateral button:hover{
+  background:#2563eb;
+}
+
+.menu-lateral .voltar{
+  margin-top:auto;
+  text-decoration:none;
+  color:white;
+  background:#ef4444;
+  padding:10px;
+  text-align:center;
+  border-radius:5px;
+}
+
+.menu-lateral .voltar:hover{
+  background:#dc2626;
+}
+
+/* Conteúdo */
+.conteudo-bancada{
+  margin-left:230px;
+  padding:40px;
+}
+
+/* Seções */
+.secao{
+  display:none;
+}
+
+.secao.ativa{
+  display:block;
+}
+
+/* Imagem */
+.imagem-bancada img{
+  width:350px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+.voltar{
+  margin-top:10px;
+  text-decoration:none;
+  color:white;
+  background:#ef4444;
+  padding:12px;
+  text-align:center;
+  border-radius:6px;
+  display:block;
+}
+
+.voltar:hover{
+  background:#dc2626;
+}
